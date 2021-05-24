@@ -1,5 +1,6 @@
 import React from 'react';
-import {Helmet} from "react-helmet";
+import {Helmet, HelmetProvider} from "react-helmet-async";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 // BOOTSTRAP CSS
 import './assets/css/bootstrap.css';
@@ -21,21 +22,24 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Welcome from './components/Welcome';
 import Recommends from './components/Recommends';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 
 function App() {
   return (
+    <Router>
+    <HelmetProvider>
     <div className="App">
-      <header>
-        <Navbar />
-      </header>
-      <Banner />
-      <Welcome />
-      <Projects />
-      <Recommends />
-      <Contact />
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+
+      <Footer />
+
       <Helmet>
         <script type="text/babel" src="./assets/js/jquery-3.2.1.min.js"></script>
         <script type="text/babel" src="./assets/js/custom.js"></script>
@@ -56,6 +60,19 @@ function App() {
         <script type="text/babel" src="./assets/js/gmaps.min.js"></script>
         <script type="text/babel" src="./assets/js/theme.js"></script>
       </Helmet>
+    </div>
+    </HelmetProvider>
+    </Router>
+  );
+}
+
+const Home = () => {
+  return (
+    <div>
+    <Banner />
+    <Welcome />
+    <Projects />
+    <Recommends />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Welcome = () => {
     return (
-      <section className="welcome_area p_120">
+      <section className="welcome_area p_120" id="welcome_area">
         <div className="container">
           <div className="row welcome_inner">
             <div className="col-lg-6">

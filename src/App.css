@@ -1,0 +1,23 @@
+#des-2 {
+  margin-top: -40px;
+  margin-bottom: 30px;
+}
+#fiveStars {
+  font-size: 0.5em;
+}
+
+.upper-social li {
+  display: inline-block;
+  padding: 30px 20px 0px 5px;
+  transform: scale(1.2);
+}
+
+.upper-social li a {
+  color: #888;
+}
+.upper-social li a:hover {
+  color: #0085ff;
+}
+.upper-social li a i:hover {
+  transform: scale(1.3);
+}

@@ -4,8 +4,10 @@ import Logo from '../assets/img/logo.png';
 
 const Navbar = () => {
 
-  var myNav = document.getElementById('navbar');
+
   window.onscroll = function () {
+
+    var myNav = document.getElementsByClassName('navbar')[0];
 
       if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
           myNav.classList.add("nav-colored");
@@ -22,10 +24,10 @@ const Navbar = () => {
 
     <header className=".header_area">
       <div className="main_menu" id="mainNav">
-        <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container box_1620">
             {/* Brand and toggle get grouped for better mobile display */}
-            <a className="navbar-brand logo_h" href="index.html"><img src={Logo} alt="" /></a>
+            <a className="navbar-brand logo_h" href="index.html"><img id="logo" src={Logo} alt="" /></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>

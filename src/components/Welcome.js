@@ -45,31 +45,31 @@ const Welcome = () => {
               <div className="skill_item">
                 <h4>Django / Python <span className="counter">85</span>%</h4>
                 <div className="progress">
-                  <div className="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar prog-1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
               <div className="skill_item">
-                <h4>React / Angular <span className="counter">90</span>%</h4>
+                <h4>React / Angular <span className="counter">80</span>%</h4>
                 <div className="progress">
-                  <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar prog-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
               <div className="skill_item">
                 <h4>Core Java <span className="counter">70</span>%</h4>
                 <div className="progress">
-                  <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar prog-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
               <div className="skill_item">
-                <h4>HTML5 / CSS3 <span className="counter">95</span>%</h4>
+                <h4>HTML5 / CSS3 <span className="counter">85</span>%</h4>
                 <div className="progress">
-                  <div className="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar prog-4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
               <div className="skill_item">
-                <h4>Photoshop <span className="counter">75</span>%</h4>
+                <h4>Photoshop <span className="counter">95</span>%</h4>
                 <div className="progress">
-                  <div className="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar prog-5" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>

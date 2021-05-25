@@ -154,7 +154,9 @@ button:focus {
 .nav-item:first-child {
   margin-left: 0px;
 }
-
+#logo {
+  width: 100px;
+}
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -1343,6 +1345,7 @@ button:focus {
     display: none; } }
 .generic-content h1 {
   font-weight: 600; }
+
 
 .about-generic-area {
   background: #fff; }
@@ -2634,7 +2637,7 @@ h6 {
       padding-right: 5px;
       box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2); }
       .tools_expert .skill_main .skill_item .progress .progress-bar {
-        width: 10%;
+        /* width: 0; */
         transition: width .6s ease;
         height: 10px;
         border-radius: 5px;
@@ -2643,6 +2646,22 @@ h6 {
         background-image: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
         background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
         background-image: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); }
+
+      .prog-1 {
+        width: 85%;
+      }
+      .prog-2 {
+        width: 80%;
+      }
+      .prog-3 {
+        width: 70%;
+      }
+      .prog-4 {
+        width: 85%;
+      }
+      .prog-5 {
+        width: 95%;
+      }
 
 /* End Welcome Area css
 ============================================================================================ */
@@ -2879,6 +2898,15 @@ h6 {
   margin-bottom: -50px;}
   .copy_right_text p a {
     color: #8490ff; }
+
+@media only screen and (max-width: 600px) {
+  .social_widget .list li {
+    width: 30px;
+  }
+  .copy_right_text {
+    font-size: 0.9rem;
+  }
+}
 
 /* End Footer Area css
 ============================================================================================ */

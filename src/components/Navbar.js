@@ -1,30 +1,28 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../assets/img/logo.png';
-import $ from 'jquery';
 
 const Navbar = () => {
 
-  var nav_offset_top = $('.header_area').height()+50;
+  var myNav = document.getElementById('navbar');
+  window.onscroll = function () {
 
-  function navbarFixed(){
-      if ( $('.header_area').length ){
-          $(window).scroll(function() {
-              var scroll = $(window).scrollTop();
-              if (scroll >= nav_offset_top ) {
-                  $(".header_area").addClass("navbar_fixed");
-              } else {
-                  $(".header_area").removeClass("navbar_fixed");
-              }
-          });
-      };
+      if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
+          myNav.classList.add("nav-colored");
+          myNav.classList.remove("nav-transparent");
+      }
+      else {
+          myNav.classList.add("nav-transparent");
+          myNav.classList.remove("nav-colored");
+      }
   };
-  navbarFixed();
+
 
   return (
+
     <header className=".header_area">
       <div className="main_menu" id="mainNav">
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
           <div className="container box_1620">
             {/* Brand and toggle get grouped for better mobile display */}
             <a className="navbar-brand logo_h" href="index.html"><img src={Logo} alt="" /></a>

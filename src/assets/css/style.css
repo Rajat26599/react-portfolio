@@ -2906,6 +2906,9 @@ h6 {
   .copy_right_text {
     font-size: 0.9rem;
   }
+  .nav-item {
+    margin: 0px;
+  }
 }
 
 /* End Footer Area css

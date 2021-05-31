@@ -9,7 +9,8 @@ const Navbar = () => {
 
     var myNav = document.getElementsByClassName('navbar')[0];
 
-      if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
+    if (window.screen.width > 600) {
+      if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400) {
           myNav.classList.add("nav-colored");
           myNav.classList.remove("nav-transparent");
       }
@@ -17,6 +18,10 @@ const Navbar = () => {
           myNav.classList.add("nav-transparent");
           myNav.classList.remove("nav-colored");
       }
+    } else {
+      myNav.classList.add("nav-colored");
+      myNav.classList.remove("nav-transparent");
+    }
   };
 
 

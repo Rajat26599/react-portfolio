@@ -1,6 +1,21 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 
 const Footer = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+          window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
   return (
     <div>
@@ -35,7 +50,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="col-lg-9">
-                    <form className="row contact_form" action="contact_process.php" method="post" id="contactForm" noValidate="novalidate">
+                    <form
+                      className="row contact_form"
+                      onSubmit={sendEmail}
+                      method="post"
+                      id="contactForm"
+                      noValidate="novalidate"
+                    >
                         <div className="col-md-6">
                             <div className="form-group">
                                 <input type="text" className="form-control" id="name" name="name" placeholder="Enter your name" />

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Experience.css';
-import tcsLogo from 'C:/django_rajat/react/react-portfolio/src/assets/img/tcsLogo.png';
-import codeLogo from 'C:/django_rajat/react/react-portfolio/src/assets/img/codeLogo.png';
-import ksyLogo from 'C:/django_rajat/react/react-portfolio/src/assets/img/ksyLogo.png';
-import cetpaLogo from 'C:/django_rajat/react/react-portfolio/src/assets/img/cetpaLogo.png';
+import tcsLogo from './img/tcsLogo.png';
+import codeLogo from './img/codeLogo.png';
+import ksyLogo from './img/ksyLogo.png';
+import cetpaLogo from './img/cetpaLogo.png';
 
 
 const Experience = () => {

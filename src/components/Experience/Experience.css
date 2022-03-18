@@ -1,0 +1,28 @@
+.experiece_area {
+    padding-bottom: unset !important;
+}
+.experience_text h4 {
+    color: #222222;
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    margin-bottom: 18px;
+    text-transform: uppercase; 
+}
+.profile {
+    padding-left: 30px;
+}
+.profile_name {
+    color: #222222;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.experienceItem {
+    margin-bottom: 40px;
+}
+.experienceItem:last-child {
+    margin-bottom: unset;
+}
+.companyName {
+    color:rgba(0, 104, 201, 0.7);
+}

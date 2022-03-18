@@ -20,6 +20,7 @@ import './assets/css/responsive.css';
 // COMPONENTS
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import Experience from './components/Experience/Experience';
 import Welcome from './components/Welcome';
 import Recommends from './components/Recommends';
 import Footer from './components/Footer';
@@ -70,6 +71,7 @@ const Home = () => {
   return (
     <div>
     <Banner />
+    <Experience />
     <Welcome />
     <Projects />
     <Recommends />

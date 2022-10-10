@@ -63,7 +63,10 @@ const Projects = () => {
         <div className="projects_item">
           <img className="img-fluid" src={project5} alt="" />
           <div className="projects_text">
-            <a href="https://github.com/Rajat26599/coronaTracker2.0" target="_blank" rel="noreferrer"><h4>Corona Tracker 2.0</h4></a>
+            <a 
+              // href="https://github.com/Rajat26599/coronaTracker2.0" 
+              href="https://corona-track-status.netlify.app"
+              target="_blank" rel="noreferrer"><h4>Corona Tracker 2.0</h4></a>
             <p>Client Project</p>
           </div>
         </div>

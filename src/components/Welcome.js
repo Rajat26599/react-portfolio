@@ -9,8 +9,8 @@ const Welcome = () => {
               <div className="welcome_text">
                 <h4>About Myself</h4>
                 <p>
-                  I have been working on my profile as a Web Developer lately. I’m eager to seek opportunities in softwares too.
-                  I’m skilled in Full-stack Web Development, Python, Angular, React, Java, C, Wordpress, IoT, databases and more.
+                  I have been working on my profile as a Full-stack Web Developer lately. I’m eager to seek opportunities in softwares too.
+                  I'm skilled in Java/Spring Boot, Python/Django, React, Angular, C, Wordpress, IoT, databases and more.
                   And I’m also an experienced Graphic Designer.
                 </p>
                 <div className="row">
@@ -43,7 +43,7 @@ const Welcome = () => {
                 <h3>Tools Expertness</h3>
                 <div className="skill_main">
               <div className="skill_item">
-                <h4>Django / Python <span className="counter">85</span>%</h4>
+                <h4>Java / Spring Boot <span className="counter">85</span>%</h4>
                 <div className="progress">
                   <div className="progress-bar prog-1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -55,7 +55,7 @@ const Welcome = () => {
                 </div>
               </div>
               <div className="skill_item">
-                <h4>Core Java <span className="counter">70</span>%</h4>
+                <h4>Python / Django <span className="counter">70</span>%</h4>
                 <div className="progress">
                   <div className="progress-bar prog-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>

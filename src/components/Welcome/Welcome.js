@@ -1,4 +1,5 @@
 import React from 'react';
+import './Welcome.css';
 
 const Welcome = () => {
     return (
@@ -43,13 +44,13 @@ const Welcome = () => {
                 <h3>Tools Expertness</h3>
                 <div className="skill_main">
               <div className="skill_item">
-                <h4>Java / Spring Boot <span className="counter">85</span>%</h4>
+                <h4>React / Angular / Vue <span className="counter">90</span>%</h4>
                 <div className="progress">
-                  <div className="progress-bar prog-1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar prog-1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
               <div className="skill_item">
-                <h4>React / Angular <span className="counter">80</span>%</h4>
+                <h4>Java / Spring Boot <span className="counter">80</span>%</h4>
                 <div className="progress">
                   <div className="progress-bar prog-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>

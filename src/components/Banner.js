@@ -17,7 +17,7 @@ const Banner = () => {
                 <h5>This is me</h5>
                 <h2>Rajat Saxena</h2>
                 <p id="des-1"><i className="lnr lnr-bug"></i> &nbsp;&nbsp;&nbsp;&nbsp; Full-stack Developer &nbsp;&nbsp;&nbsp;&nbsp; <i className="lnr lnr-pie-chart"></i> &nbsp;&nbsp;&nbsp;&nbsp; Graphic Designer &nbsp;&nbsp;&nbsp;&nbsp; <i className="lnr lnr-code"></i> &nbsp;&nbsp;&nbsp;&nbsp; Software Enthusiast</p>
-                <p id="des-2"><i className="lnr lnr-star"></i> &nbsp;&nbsp;&nbsp;&nbsp; Founder of CODE &nbsp;&nbsp;&nbsp;&nbsp; <i className="lnr lnr-briefcase"></i> &nbsp;&nbsp;&nbsp;&nbsp; Assistant System Engineer - Trainee at TCS</p>
+                <p id="des-2"><i className="lnr lnr-star"></i> &nbsp;&nbsp;&nbsp;&nbsp; Founder of CODE &nbsp;&nbsp;&nbsp;&nbsp; <i className="lnr lnr-briefcase"></i> &nbsp;&nbsp;&nbsp;&nbsp; ABA (UI Developer) at Infosys</p>
                 <a className="banner_btn" href="#experience_area">Discover Now</a>
                 <div className="upper-social">
                   <ul className="list">
